@@ -131,6 +131,12 @@ class DevOpsDSLParser ( Parser ):
             if hasattr( listener, "exitProgram" ):
                 listener.exitProgram(self)
 
+        def accept(self, visitor:ParseTreeVisitor):
+            if hasattr( visitor, "visitProgram" ):
+                return visitor.visitProgram(self)
+            else:
+                return visitor.visitChildren(self)
+
 
 
 
@@ -199,6 +205,12 @@ class DevOpsDSLParser ( Parser ):
         def exitRule(self, listener:ParseTreeListener):
             if hasattr( listener, "exitStatement" ):
                 listener.exitStatement(self)
+
+        def accept(self, visitor:ParseTreeVisitor):
+            if hasattr( visitor, "visitStatement" ):
+                return visitor.visitStatement(self)
+            else:
+                return visitor.visitChildren(self)
 
 
 
@@ -275,6 +287,12 @@ class DevOpsDSLParser ( Parser ):
             if hasattr( listener, "exitNodeCommand" ):
                 listener.exitNodeCommand(self)
 
+        def accept(self, visitor:ParseTreeVisitor):
+            if hasattr( visitor, "visitNodeCommand" ):
+                return visitor.visitNodeCommand(self)
+            else:
+                return visitor.visitChildren(self)
+
 
 
 
@@ -325,6 +343,12 @@ class DevOpsDSLParser ( Parser ):
         def exitRule(self, listener:ParseTreeListener):
             if hasattr( listener, "exitGroupCommand" ):
                 listener.exitGroupCommand(self)
+
+        def accept(self, visitor:ParseTreeVisitor):
+            if hasattr( visitor, "visitGroupCommand" ):
+                return visitor.visitGroupCommand(self)
+            else:
+                return visitor.visitChildren(self)
 
 
 
@@ -377,6 +401,12 @@ class DevOpsDSLParser ( Parser ):
         def exitRule(self, listener:ParseTreeListener):
             if hasattr( listener, "exitDeployCommand" ):
                 listener.exitDeployCommand(self)
+
+        def accept(self, visitor:ParseTreeVisitor):
+            if hasattr( visitor, "visitDeployCommand" ):
+                return visitor.visitDeployCommand(self)
+            else:
+                return visitor.visitChildren(self)
 
 
 
@@ -433,6 +463,12 @@ class DevOpsDSLParser ( Parser ):
             if hasattr( listener, "exitRule" ):
                 listener.exitRule(self)
 
+        def accept(self, visitor:ParseTreeVisitor):
+            if hasattr( visitor, "visitRule" ):
+                return visitor.visitRule(self)
+            else:
+                return visitor.visitChildren(self)
+
 
 
 
@@ -488,6 +524,12 @@ class DevOpsDSLParser ( Parser ):
             if hasattr( listener, "exitCondition" ):
                 listener.exitCondition(self)
 
+        def accept(self, visitor:ParseTreeVisitor):
+            if hasattr( visitor, "visitCondition" ):
+                return visitor.visitCondition(self)
+            else:
+                return visitor.visitChildren(self)
+
 
 
 
@@ -539,6 +581,12 @@ class DevOpsDSLParser ( Parser ):
         def exitRule(self, listener:ParseTreeListener):
             if hasattr( listener, "exitAction" ):
                 listener.exitAction(self)
+
+        def accept(self, visitor:ParseTreeVisitor):
+            if hasattr( visitor, "visitAction" ):
+                return visitor.visitAction(self)
+            else:
+                return visitor.visitChildren(self)
 
 
 
@@ -612,6 +660,12 @@ class DevOpsDSLParser ( Parser ):
             if hasattr( listener, "exitParallelBlock" ):
                 listener.exitParallelBlock(self)
 
+        def accept(self, visitor:ParseTreeVisitor):
+            if hasattr( visitor, "visitParallelBlock" ):
+                return visitor.visitParallelBlock(self)
+            else:
+                return visitor.visitChildren(self)
+
 
 
 
@@ -667,6 +721,12 @@ class DevOpsDSLParser ( Parser ):
         def exitRule(self, listener:ParseTreeListener):
             if hasattr( listener, "exitComparator" ):
                 listener.exitComparator(self)
+
+        def accept(self, visitor:ParseTreeVisitor):
+            if hasattr( visitor, "visitComparator" ):
+                return visitor.visitComparator(self)
+            else:
+                return visitor.visitChildren(self)
 
 
 
