@@ -29,6 +29,11 @@ def main():
 
     # Lexer y parser
     lexer = DevOpsDSLLexer(input_stream)
+
+    for token in lexer.getAllTokens():
+        print(token)
+
+    input_stream.seek(0)
     tokens = CommonTokenStream(lexer)
     parser = DevOpsDSLParser(tokens)
 
@@ -37,6 +42,8 @@ def main():
     parser.addErrorListener(ConsoleErrorListener())
 
     tree = parser.program()
+
+    print(tree.toStringTree(recog=parser))
 
     print("[INFO] Árbol sintáctico generado\n")
 
