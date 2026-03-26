@@ -11,4 +11,3 @@ do
 done
 
 echo "[SUCCESS] Deploy completado"
-
