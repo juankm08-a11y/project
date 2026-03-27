@@ -1,7 +1,7 @@
 # !/bin/bash
 
 SCRIPT_DIR=$(dirname "$0")
-LOG_FILE="$SCRIPT_DIR/../logs/backup.log"
+LOG_FILE="$SCRIPT_DIR/../logs/deploy.log"
 
 mkdir -p "$SCRIPT_DIR/../logs"
 
