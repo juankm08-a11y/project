@@ -1,6 +1,7 @@
 # !/bin/bash
 
-LOG_FILE="../logs/deploy.log"
+SCRIPT_DIR=$(dirname= "$0")
+LOG_FILE="$SCRIPT_DIR}/logs/backup.log"
 
 echo "========== DEPLOY ==========" | tee -a $LOG_FILE 
 echo "Nodo: ${hostname}" | tee -a $LOG_FILE

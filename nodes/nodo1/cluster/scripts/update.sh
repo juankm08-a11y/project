@@ -1,6 +1,7 @@
 # !/bin/bash
 
-LOG_FILE="../logs/update.log"
+SCRIPT_DIR=$(dirname= "$0")
+LOG_FILE="$SCRIPT_DIR}/logs/backup.log"
 
 echo "========== UPDATE ============" | tee -a $LOG_FILE
 echo "Nodo: ${hostname}" | tee -a $LOG_FILE
