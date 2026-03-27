@@ -1,6 +1,6 @@
 # !/bin/bash
 
-echo !========== DEPLOY =========="
+echo "========== DEPLOY =========="
 echo "Nodo: ${hostname}"
 echo "[INFO] Iniciando despliegue..."
 

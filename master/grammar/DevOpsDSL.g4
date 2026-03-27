@@ -5,10 +5,10 @@ grammar DevOpsDSL;
 program: statement* EOF;
 
 statement
-    : nodeCommand
-    | groupCommand
-    | deployCommand
-    | rule
+    : nodeCommand SEMICOLON
+    | groupCommand SEMICOLON
+    | deployCommand SEMICOLON
+    | rule SEMICOLON
     | parallelBlock
     ;
 
@@ -43,6 +43,7 @@ parallelBlock
 
 // ===== LEXER RULES =====
 
+SEMICOLON: ';';
 ARROW: '->';
 
 comparator

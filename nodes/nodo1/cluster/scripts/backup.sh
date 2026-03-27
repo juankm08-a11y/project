@@ -1,6 +1,6 @@
 # !/bin/bash
 
-echo !========== BACKUP =========="
+echo "========== BACKUP =========="
 echo "Nodo: ${hostname}"
 echo "[INFO] Iniciando backup..."
 

@@ -5,8 +5,10 @@ sys.path.append(os.path.dirname(os.path.abspath(__file__)))
 
 from antlr4 import *
 from antlr4.error.ErrorListener import ConsoleErrorListener
-from parser.DevOpsDSLLexer import DevOpsDSLLexer
-from parser.DevOpsDSLParser import DevOpsDSLParser
+
+from parser.grammar.DevOpsDSLLexer import DevOpsDSLLexer
+from parser.grammar.DevOpsDSLParser import DevOpsDSLParser
+
 from interpreter.interpreter import Interpreter
 from executor.executor import Executor
 
@@ -14,44 +16,55 @@ from executor.executor import Executor
 def main():
     print("[INFO] Iniciando sistema DSL...\n")
 
-    # Permitir pasar archivo por argumento
+    # Damos permisos para pasar archivo por argumento
     file = "script.dsl"
     if len(sys.argv) > 1:
         file = sys.argv[1]
 
-    # Validar que el archivo existe
+    # Validamo que el archivo existe
     if not os.path.exists(file):
         print(f"[ERROR] No existe el archivo: {file}")
         return
-
-    # Cargar archivo DSL
+    
+    # Cargamos el archivos DSL
     input_stream = FileStream(file)
 
-    # Lexer y parser
+    # Lexer
     lexer = DevOpsDSLLexer(input_stream)
 
-    for token in lexer.getAllTokens():
+    # Creamos los tokens
+    tokens = CommonTokenStream(lexer)
+    tokens.fill()
+
+    # Mostramos los Tokens
+    print("[TOKENS]")
+    for token in tokens.tokens:
         print(token)
 
-    input_stream.seek(0)
-    tokens = CommonTokenStream(lexer)
+    # Parser
     parser = DevOpsDSLParser(tokens)
 
-    # 🔥 Manejo de errores sintácticos
+    # Manejo de errores sintácticos
     parser.removeErrorListeners()
     parser.addErrorListener(ConsoleErrorListener())
 
+    # Tree
     tree = parser.program()
 
+    # Mostramos el arbol sintáctico
+    print("\n[ÁRBOL]")
     print(tree.toStringTree(recog=parser))
 
-    print("[INFO] Árbol sintáctico generado\n")
+    # Mostramos errores sintácticos
+    print("\nErrores sintácticos:", parser.getNumberOfSyntaxErrors())
 
-    # Inicializar sistema
+    print("\n[INFO] Árbol sintáctico generado\n")
+
+    # Inicializamos el sistema
     executor = Executor()
     interpreter = Interpreter(executor)
 
-    # Ejecutar
+    # Ejecutamos 
     interpreter.visit(tree)
 
 

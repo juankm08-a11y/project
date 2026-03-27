@@ -1,4 +1,4 @@
-from parser.DevOpsDSLVisitor import DevOpsDSLVisitor
+from parser.grammar.DevOpsDSLVisitor import DevOpsDSLVisitor
 
 class Interpreter(DevOpsDSLVisitor):
 
@@ -8,6 +8,7 @@ class Interpreter(DevOpsDSLVisitor):
     # =========================
     # PROGRAM
     # =========================
+    
     def visitProgram(self, ctx):
         print("[INFO] Iniciando ejecución del programa DSL\n")
 
@@ -15,10 +16,11 @@ class Interpreter(DevOpsDSLVisitor):
             self.visit(stmt)
 
         print("\n[INFO] Ejecución finalizada")
-
+    
     # =========================
     # COMMANDS
     # =========================
+    
     def visitNodeCommand(self, ctx):
         node = ctx.ID().getText()
         script = ctx.STRING().getText().strip('"')
@@ -36,33 +38,31 @@ class Interpreter(DevOpsDSLVisitor):
         app = ctx.ID(0).getText()
         group = ctx.ID(1).getText()
 
-        print(f"[DSL] Deploy aplicación '{app}' en grupo '{group}'")
+        print(f"[DSL] Deploy '{app}' en '{group}'")
         self.executor.deploy(app, group)
 
+    
     # =========================
     # RULES
     # =========================
+    
     def visitRule(self, ctx):
         print("[DSL] Evaluando regla...")
 
         if self.evaluate_condition(ctx.condition()):
-            print("[DSL] Condición verdadera → ejecutando acción\n")
+            print("[DSL] Condición verdadera\n")
             self.visit(ctx.action())
         else:
-            print("[DSL] Condición falsa → no se ejecuta acción\n")
+            print("[DSL] Condición falsa\n")
 
     def evaluate_condition(self, ctx):
-        node = ctx.ID(0).getText()      # sensor
-        metric = ctx.ID(1).getText()    # temp, cpu
+        node = ctx.ID(0).getText()
+        metric = ctx.ID(1).getText()
         operator = ctx.comparator().getText()
         value = int(ctx.NUMBER().getText())
 
-        print(f"[INFO] Evaluando: {node}.{metric} {operator} {value}")
-
         data = self.executor.get_sensor_data(node)
         current = data.get(metric, 0)
-
-        print(f"[INFO] Valor actual: {current}")
 
         if operator == ">":
             return current > value
@@ -76,32 +76,29 @@ class Interpreter(DevOpsDSLVisitor):
             return current <= value
 
         return False
-
+    
     # =========================
     # ACTIONS
     # =========================
+
     def visitAction(self, ctx):
-
-        # Caso: alert()
         if ctx.getChildCount() == 3:
-            action = ctx.ID().getText()
-            print(f"[ACTION] Ejecutando acción: {action}")
+            print(f"[ACTION] {ctx.ID().getText()}")
 
-        # Caso: nodo.run("script.sh")
         elif ctx.STRING():
             node = ctx.ID().getText()
             script = ctx.STRING().getText().strip('"')
 
-            print(f"[ACTION] Ejecutando en nodo '{node}': {script}")
             self.executor.run_on_node(node, script)
 
     # =========================
     # PARALLEL
     # =========================
+    
     def visitParallelBlock(self, ctx):
         import threading
 
-        print("[DSL] Ejecutando bloque en paralelo\n")
+        print("[DSL] Ejecutando paralelo\n")
 
         threads = []
 
@@ -113,6 +110,4 @@ class Interpreter(DevOpsDSLVisitor):
         for t in threads:
             t.join()
 
-        print("\n[DSL] Fin de ejecución paralela")
-
-        print(f"[DEBUG] Visitando: {type(ctx).__name__}")
+        print("\n[DSL] Fin paralelo")
