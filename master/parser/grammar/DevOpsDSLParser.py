@@ -16,25 +16,25 @@ def serializedATN():
         1,2,1,2,1,2,1,2,1,2,1,2,1,2,1,3,1,3,1,3,1,3,1,3,1,3,1,4,1,4,1,4,
         1,4,1,4,1,5,1,5,1,5,1,5,1,6,1,6,1,6,1,6,1,6,1,6,1,7,1,7,1,7,1,7,
         1,7,1,7,1,7,1,7,1,7,3,7,81,8,7,1,8,1,8,1,8,4,8,86,8,8,11,8,12,8,
-        87,1,8,1,8,1,9,1,9,1,9,0,0,10,0,2,4,6,8,10,12,14,16,18,0,1,1,0,11,
-        15,90,0,23,1,0,0,0,2,41,1,0,0,0,4,43,1,0,0,0,6,50,1,0,0,0,8,56,1,
+        87,1,8,1,8,1,9,1,9,1,9,0,0,10,0,2,4,6,8,10,12,14,16,18,0,1,1,0,13,
+        17,90,0,23,1,0,0,0,2,41,1,0,0,0,4,43,1,0,0,0,6,50,1,0,0,0,8,56,1,
         0,0,0,10,61,1,0,0,0,12,65,1,0,0,0,14,80,1,0,0,0,16,82,1,0,0,0,18,
         91,1,0,0,0,20,22,3,2,1,0,21,20,1,0,0,0,22,25,1,0,0,0,23,21,1,0,0,
         0,23,24,1,0,0,0,24,26,1,0,0,0,25,23,1,0,0,0,26,27,5,0,0,1,27,1,1,
-        0,0,0,28,29,3,4,2,0,29,30,5,16,0,0,30,42,1,0,0,0,31,32,3,6,3,0,32,
-        33,5,16,0,0,33,42,1,0,0,0,34,35,3,8,4,0,35,36,5,16,0,0,36,42,1,0,
-        0,0,37,38,3,10,5,0,38,39,5,16,0,0,39,42,1,0,0,0,40,42,3,16,8,0,41,
+        0,0,0,28,29,3,4,2,0,29,30,5,11,0,0,30,42,1,0,0,0,31,32,3,6,3,0,32,
+        33,5,11,0,0,33,42,1,0,0,0,34,35,3,8,4,0,35,36,5,11,0,0,36,42,1,0,
+        0,0,37,38,3,10,5,0,38,39,5,11,0,0,39,42,1,0,0,0,40,42,3,16,8,0,41,
         28,1,0,0,0,41,31,1,0,0,0,41,34,1,0,0,0,41,37,1,0,0,0,41,40,1,0,0,
-        0,42,3,1,0,0,0,43,44,5,18,0,0,44,45,5,1,0,0,45,46,5,2,0,0,46,47,
-        5,3,0,0,47,48,5,19,0,0,48,49,5,4,0,0,49,5,1,0,0,0,50,51,5,18,0,0,
-        51,52,5,1,0,0,52,53,5,5,0,0,53,54,5,3,0,0,54,55,5,4,0,0,55,7,1,0,
-        0,0,56,57,5,6,0,0,57,58,5,18,0,0,58,59,5,7,0,0,59,60,5,18,0,0,60,
-        9,1,0,0,0,61,62,3,12,6,0,62,63,5,17,0,0,63,64,3,14,7,0,64,11,1,0,
-        0,0,65,66,5,18,0,0,66,67,5,1,0,0,67,68,5,18,0,0,68,69,3,18,9,0,69,
-        70,5,20,0,0,70,13,1,0,0,0,71,72,5,18,0,0,72,73,5,3,0,0,73,81,5,4,
-        0,0,74,75,5,18,0,0,75,76,5,1,0,0,76,77,5,2,0,0,77,78,5,3,0,0,78,
-        79,5,19,0,0,79,81,5,4,0,0,80,71,1,0,0,0,80,74,1,0,0,0,81,15,1,0,
-        0,0,82,83,5,8,0,0,83,85,5,9,0,0,84,86,3,2,1,0,85,84,1,0,0,0,86,87,
+        0,42,3,1,0,0,0,43,44,5,18,0,0,44,45,5,6,0,0,45,46,5,1,0,0,46,47,
+        5,7,0,0,47,48,5,19,0,0,48,49,5,8,0,0,49,5,1,0,0,0,50,51,5,18,0,0,
+        51,52,5,6,0,0,52,53,5,2,0,0,53,54,5,7,0,0,54,55,5,8,0,0,55,7,1,0,
+        0,0,56,57,5,3,0,0,57,58,5,18,0,0,58,59,5,4,0,0,59,60,5,18,0,0,60,
+        9,1,0,0,0,61,62,3,12,6,0,62,63,5,12,0,0,63,64,3,14,7,0,64,11,1,0,
+        0,0,65,66,5,18,0,0,66,67,5,6,0,0,67,68,5,18,0,0,68,69,3,18,9,0,69,
+        70,5,20,0,0,70,13,1,0,0,0,71,72,5,18,0,0,72,73,5,7,0,0,73,81,5,8,
+        0,0,74,75,5,18,0,0,75,76,5,6,0,0,76,77,5,1,0,0,77,78,5,7,0,0,78,
+        79,5,19,0,0,79,81,5,8,0,0,80,71,1,0,0,0,80,74,1,0,0,0,81,15,1,0,
+        0,0,82,83,5,5,0,0,83,85,5,9,0,0,84,86,3,2,1,0,85,84,1,0,0,0,86,87,
         1,0,0,0,87,85,1,0,0,0,87,88,1,0,0,0,88,89,1,0,0,0,89,90,5,10,0,0,
         90,17,1,0,0,0,91,92,7,0,0,0,92,19,1,0,0,0,4,23,41,80,87
     ]
@@ -49,15 +49,14 @@ class DevOpsDSLParser ( Parser ):
 
     sharedContextCache = PredictionContextCache()
 
-    literalNames = [ "<INVALID>", "'.'", "'run'", "'('", "')'", "'update'", 
-                     "'deploy'", "'to'", "'parallel'", "'{'", "'}'", "'>'", 
-                     "'<'", "'=='", "'>='", "'<='", "';'", "'->'" ]
+    literalNames = [ "<INVALID>", "'run'", "'update'", "'deploy'", "'to'", 
+                     "'parallel'", "'.'", "'('", "')'", "'{'", "'}'", "';'", 
+                     "'->'", "'>'", "'<'", "'=='", "'>='", "'<='" ]
 
-    symbolicNames = [ "<INVALID>", "<INVALID>", "<INVALID>", "<INVALID>", 
-                      "<INVALID>", "<INVALID>", "<INVALID>", "<INVALID>", 
-                      "<INVALID>", "<INVALID>", "<INVALID>", "<INVALID>", 
-                      "<INVALID>", "<INVALID>", "<INVALID>", "<INVALID>", 
-                      "SEMICOLON", "ARROW", "ID", "STRING", "NUMBER", "WS" ]
+    symbolicNames = [ "<INVALID>", "RUN", "UPDATE", "DEPLOY", "TO", "PARALLEL", 
+                      "PUNTO", "LPAREN", "RPAREN", "LBRACE", "RBRACE", "SEMICOLON", 
+                      "ARROW", "MAYORQUE", "MENORQUE", "IGUAL", "MAYORIGUAL", 
+                      "MENORIGUAL", "ID", "STRING", "NUMBER", "WS" ]
 
     RULE_program = 0
     RULE_statement = 1
@@ -75,23 +74,23 @@ class DevOpsDSLParser ( Parser ):
                    "comparator" ]
 
     EOF = Token.EOF
-    T__0=1
-    T__1=2
-    T__2=3
-    T__3=4
-    T__4=5
-    T__5=6
-    T__6=7
-    T__7=8
-    T__8=9
-    T__9=10
-    T__10=11
-    T__11=12
-    T__12=13
-    T__13=14
-    T__14=15
-    SEMICOLON=16
-    ARROW=17
+    RUN=1
+    UPDATE=2
+    DEPLOY=3
+    TO=4
+    PARALLEL=5
+    PUNTO=6
+    LPAREN=7
+    RPAREN=8
+    LBRACE=9
+    RBRACE=10
+    SEMICOLON=11
+    ARROW=12
+    MAYORQUE=13
+    MENORQUE=14
+    IGUAL=15
+    MAYORIGUAL=16
+    MENORIGUAL=17
     ID=18
     STRING=19
     NUMBER=20
@@ -153,7 +152,7 @@ class DevOpsDSLParser ( Parser ):
             self.state = 23
             self._errHandler.sync(self)
             _la = self._input.LA(1)
-            while (((_la) & ~0x3f) == 0 and ((1 << _la) & 262464) != 0):
+            while (((_la) & ~0x3f) == 0 and ((1 << _la) & 262184) != 0):
                 self.state = 20
                 self.statement()
                 self.state = 25
@@ -287,8 +286,20 @@ class DevOpsDSLParser ( Parser ):
         def ID(self):
             return self.getToken(DevOpsDSLParser.ID, 0)
 
+        def PUNTO(self):
+            return self.getToken(DevOpsDSLParser.PUNTO, 0)
+
+        def RUN(self):
+            return self.getToken(DevOpsDSLParser.RUN, 0)
+
+        def LPAREN(self):
+            return self.getToken(DevOpsDSLParser.LPAREN, 0)
+
         def STRING(self):
             return self.getToken(DevOpsDSLParser.STRING, 0)
+
+        def RPAREN(self):
+            return self.getToken(DevOpsDSLParser.RPAREN, 0)
 
         def getRuleIndex(self):
             return DevOpsDSLParser.RULE_nodeCommand
@@ -319,15 +330,15 @@ class DevOpsDSLParser ( Parser ):
             self.state = 43
             self.match(DevOpsDSLParser.ID)
             self.state = 44
-            self.match(DevOpsDSLParser.T__0)
+            self.match(DevOpsDSLParser.PUNTO)
             self.state = 45
-            self.match(DevOpsDSLParser.T__1)
+            self.match(DevOpsDSLParser.RUN)
             self.state = 46
-            self.match(DevOpsDSLParser.T__2)
+            self.match(DevOpsDSLParser.LPAREN)
             self.state = 47
             self.match(DevOpsDSLParser.STRING)
             self.state = 48
-            self.match(DevOpsDSLParser.T__3)
+            self.match(DevOpsDSLParser.RPAREN)
         except RecognitionException as re:
             localctx.exception = re
             self._errHandler.reportError(self, re)
@@ -346,6 +357,18 @@ class DevOpsDSLParser ( Parser ):
 
         def ID(self):
             return self.getToken(DevOpsDSLParser.ID, 0)
+
+        def PUNTO(self):
+            return self.getToken(DevOpsDSLParser.PUNTO, 0)
+
+        def UPDATE(self):
+            return self.getToken(DevOpsDSLParser.UPDATE, 0)
+
+        def LPAREN(self):
+            return self.getToken(DevOpsDSLParser.LPAREN, 0)
+
+        def RPAREN(self):
+            return self.getToken(DevOpsDSLParser.RPAREN, 0)
 
         def getRuleIndex(self):
             return DevOpsDSLParser.RULE_groupCommand
@@ -376,13 +399,13 @@ class DevOpsDSLParser ( Parser ):
             self.state = 50
             self.match(DevOpsDSLParser.ID)
             self.state = 51
-            self.match(DevOpsDSLParser.T__0)
+            self.match(DevOpsDSLParser.PUNTO)
             self.state = 52
-            self.match(DevOpsDSLParser.T__4)
+            self.match(DevOpsDSLParser.UPDATE)
             self.state = 53
-            self.match(DevOpsDSLParser.T__2)
+            self.match(DevOpsDSLParser.LPAREN)
             self.state = 54
-            self.match(DevOpsDSLParser.T__3)
+            self.match(DevOpsDSLParser.RPAREN)
         except RecognitionException as re:
             localctx.exception = re
             self._errHandler.reportError(self, re)
@@ -399,11 +422,17 @@ class DevOpsDSLParser ( Parser ):
             super().__init__(parent, invokingState)
             self.parser = parser
 
+        def DEPLOY(self):
+            return self.getToken(DevOpsDSLParser.DEPLOY, 0)
+
         def ID(self, i:int=None):
             if i is None:
                 return self.getTokens(DevOpsDSLParser.ID)
             else:
                 return self.getToken(DevOpsDSLParser.ID, i)
+
+        def TO(self):
+            return self.getToken(DevOpsDSLParser.TO, 0)
 
         def getRuleIndex(self):
             return DevOpsDSLParser.RULE_deployCommand
@@ -432,11 +461,11 @@ class DevOpsDSLParser ( Parser ):
         try:
             self.enterOuterAlt(localctx, 1)
             self.state = 56
-            self.match(DevOpsDSLParser.T__5)
+            self.match(DevOpsDSLParser.DEPLOY)
             self.state = 57
             self.match(DevOpsDSLParser.ID)
             self.state = 58
-            self.match(DevOpsDSLParser.T__6)
+            self.match(DevOpsDSLParser.TO)
             self.state = 59
             self.match(DevOpsDSLParser.ID)
         except RecognitionException as re:
@@ -520,6 +549,9 @@ class DevOpsDSLParser ( Parser ):
             else:
                 return self.getToken(DevOpsDSLParser.ID, i)
 
+        def PUNTO(self):
+            return self.getToken(DevOpsDSLParser.PUNTO, 0)
+
         def comparator(self):
             return self.getTypedRuleContext(DevOpsDSLParser.ComparatorContext,0)
 
@@ -556,7 +588,7 @@ class DevOpsDSLParser ( Parser ):
             self.state = 65
             self.match(DevOpsDSLParser.ID)
             self.state = 66
-            self.match(DevOpsDSLParser.T__0)
+            self.match(DevOpsDSLParser.PUNTO)
             self.state = 67
             self.match(DevOpsDSLParser.ID)
             self.state = 68
@@ -581,6 +613,18 @@ class DevOpsDSLParser ( Parser ):
 
         def ID(self):
             return self.getToken(DevOpsDSLParser.ID, 0)
+
+        def LPAREN(self):
+            return self.getToken(DevOpsDSLParser.LPAREN, 0)
+
+        def RPAREN(self):
+            return self.getToken(DevOpsDSLParser.RPAREN, 0)
+
+        def PUNTO(self):
+            return self.getToken(DevOpsDSLParser.PUNTO, 0)
+
+        def RUN(self):
+            return self.getToken(DevOpsDSLParser.RUN, 0)
 
         def STRING(self):
             return self.getToken(DevOpsDSLParser.STRING, 0)
@@ -618,9 +662,9 @@ class DevOpsDSLParser ( Parser ):
                 self.state = 71
                 self.match(DevOpsDSLParser.ID)
                 self.state = 72
-                self.match(DevOpsDSLParser.T__2)
+                self.match(DevOpsDSLParser.LPAREN)
                 self.state = 73
-                self.match(DevOpsDSLParser.T__3)
+                self.match(DevOpsDSLParser.RPAREN)
                 pass
 
             elif la_ == 2:
@@ -628,15 +672,15 @@ class DevOpsDSLParser ( Parser ):
                 self.state = 74
                 self.match(DevOpsDSLParser.ID)
                 self.state = 75
-                self.match(DevOpsDSLParser.T__0)
+                self.match(DevOpsDSLParser.PUNTO)
                 self.state = 76
-                self.match(DevOpsDSLParser.T__1)
+                self.match(DevOpsDSLParser.RUN)
                 self.state = 77
-                self.match(DevOpsDSLParser.T__2)
+                self.match(DevOpsDSLParser.LPAREN)
                 self.state = 78
                 self.match(DevOpsDSLParser.STRING)
                 self.state = 79
-                self.match(DevOpsDSLParser.T__3)
+                self.match(DevOpsDSLParser.RPAREN)
                 pass
 
 
@@ -655,6 +699,15 @@ class DevOpsDSLParser ( Parser ):
         def __init__(self, parser, parent:ParserRuleContext=None, invokingState:int=-1):
             super().__init__(parent, invokingState)
             self.parser = parser
+
+        def PARALLEL(self):
+            return self.getToken(DevOpsDSLParser.PARALLEL, 0)
+
+        def LBRACE(self):
+            return self.getToken(DevOpsDSLParser.LBRACE, 0)
+
+        def RBRACE(self):
+            return self.getToken(DevOpsDSLParser.RBRACE, 0)
 
         def statement(self, i:int=None):
             if i is None:
@@ -691,9 +744,9 @@ class DevOpsDSLParser ( Parser ):
         try:
             self.enterOuterAlt(localctx, 1)
             self.state = 82
-            self.match(DevOpsDSLParser.T__7)
+            self.match(DevOpsDSLParser.PARALLEL)
             self.state = 83
-            self.match(DevOpsDSLParser.T__8)
+            self.match(DevOpsDSLParser.LBRACE)
             self.state = 85 
             self._errHandler.sync(self)
             _la = self._input.LA(1)
@@ -703,11 +756,11 @@ class DevOpsDSLParser ( Parser ):
                 self.state = 87 
                 self._errHandler.sync(self)
                 _la = self._input.LA(1)
-                if not ((((_la) & ~0x3f) == 0 and ((1 << _la) & 262464) != 0)):
+                if not ((((_la) & ~0x3f) == 0 and ((1 << _la) & 262184) != 0)):
                     break
 
             self.state = 89
-            self.match(DevOpsDSLParser.T__9)
+            self.match(DevOpsDSLParser.RBRACE)
         except RecognitionException as re:
             localctx.exception = re
             self._errHandler.reportError(self, re)
@@ -724,6 +777,20 @@ class DevOpsDSLParser ( Parser ):
             super().__init__(parent, invokingState)
             self.parser = parser
 
+        def MAYORQUE(self):
+            return self.getToken(DevOpsDSLParser.MAYORQUE, 0)
+
+        def MENORQUE(self):
+            return self.getToken(DevOpsDSLParser.MENORQUE, 0)
+
+        def IGUAL(self):
+            return self.getToken(DevOpsDSLParser.IGUAL, 0)
+
+        def MAYORIGUAL(self):
+            return self.getToken(DevOpsDSLParser.MAYORIGUAL, 0)
+
+        def MENORIGUAL(self):
+            return self.getToken(DevOpsDSLParser.MENORIGUAL, 0)
 
         def getRuleIndex(self):
             return DevOpsDSLParser.RULE_comparator
@@ -754,7 +821,7 @@ class DevOpsDSLParser ( Parser ):
             self.enterOuterAlt(localctx, 1)
             self.state = 91
             _la = self._input.LA(1)
-            if not((((_la) & ~0x3f) == 0 and ((1 << _la) & 63488) != 0)):
+            if not((((_la) & ~0x3f) == 0 and ((1 << _la) & 253952) != 0)):
                 self._errHandler.recoverInline(self)
             else:
                 self._errHandler.reportMatch(self)

@@ -13,15 +13,15 @@ statement
     ;
 
 nodeCommand
-    : ID '.' 'run' '(' STRING ')'
+    : ID PUNTO RUN LPAREN STRING RPAREN
     ;
 
 groupCommand
-    : ID '.' 'update' '(' ')'
+    : ID PUNTO UPDATE LPAREN RPAREN
     ;
 
 deployCommand
-    : 'deploy' ID 'to' ID
+    : DEPLOY ID TO ID
     ;
 
 rule
@@ -29,26 +29,48 @@ rule
     ;
 
 condition
-    : ID '.' ID comparator NUMBER
+    : ID PUNTO ID comparator NUMBER
     ;
 
 action
-    : ID '(' ')'
-    | ID '.' 'run' '(' STRING ')'
+    : ID LPAREN RPAREN
+    | ID PUNTO RUN LPAREN STRING RPAREN
     ;
 
 parallelBlock
-    : 'parallel' '{' statement+ '}'
+    : PARALLEL LBRACE statement+ RBRACE
+    ;
+
+comparator
+    : MAYORQUE
+    | MENORQUE
+    | IGUAL
+    | MAYORIGUAL
+    | MENORIGUAL
     ;
 
 // ===== LEXER RULES =====
 
+RUN: 'run';
+UPDATE: 'update';
+DEPLOY: 'deploy';
+TO: 'to';
+PARALLEL: 'parallel';
+
+PUNTO: '.';
+LPAREN: '(';
+RPAREN: ')';
+LBRACE: '{';
+RBRACE: '}';
+
 SEMICOLON: ';';
 ARROW: '->';
 
-comparator
-    : '>' | '<' | '==' | '>=' | '<='
-    ;
+MAYORQUE: '>';
+MENORQUE: '<';
+IGUAL: '==';
+MAYORIGUAL: '>=';
+MENORIGUAL: '<=';
 
 ID: [a-zA-Z_][a-zA-Z0-9_]*;
 STRING: '"' .*? '"';
